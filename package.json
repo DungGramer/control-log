@@ -1,0 +1,17 @@
+{
+  "name": "control-log",
+  "version": "0.0.2-aplha",
+  "description": "",
+  "main": "index",
+  "typings": "index",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "DungGramer",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.7.15"
+  }
+}
