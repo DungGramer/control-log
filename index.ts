@@ -1,8 +1,8 @@
 import { NodeConfig, NodeTheme, Theme } from "./constants";
 
 class ControlLog {
-  color: any;
-  bgColor: any;
+  color: NodeColor;
+  bgColor: Color | NodeColor;
   theme: any;
   environment = this.getEnv();
 

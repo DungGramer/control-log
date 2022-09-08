@@ -14,7 +14,7 @@ const Blocks = Object.freeze({
   rounded: "border-radius: 4px;",
 });
 
-const NodeConfig = Object.freeze({
+const NodeConfig: NodeConfigInterFace = {
   color: {
     black  : { start: "[30m", end: "[39m" },
     red    : { start: "[31m", end: "[39m" },
@@ -46,7 +46,7 @@ const NodeConfig = Object.freeze({
     hidden       : { start: "[8m", end: "[28m" },
     strikethrough: { start: "[9m", end: "[29m" },
   }
-});
+};
 
 const NodeTheme = Object.freeze({
   dracula: {
