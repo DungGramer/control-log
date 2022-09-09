@@ -1,8 +1,8 @@
 import { NodeConfig, NodeTheme, Theme } from "./constants";
 
 class ControlLog {
-  color: NodeColor;
-  bgColor: Color | NodeColor;
+  color: Color | NodeItemConfigInterface;
+  bgColor: Color | NodeItemConfigInterface;
   theme: any;
   environment = this.getEnv();
 
@@ -41,8 +41,8 @@ class ControlLog {
   }
 
   nodeInit(config: Config) {
-    if (config.color) this.color = NodeConfig.color[config.color];
-    if (config.bgColor) this.bgColor = NodeConfig.bgColor[config.bgColor];
+    if (config.color) this.color = NodeConfig.color[config.color as NodeColorName];
+    if (config.bgColor) this.bgColor = NodeConfig.bgColor[config.bgColor as NodeColorName];
     if (config.theme) this.theme = NodeTheme[config.theme];
   }
 

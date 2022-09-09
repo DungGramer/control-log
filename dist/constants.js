@@ -17,7 +17,7 @@ var Blocks = Object.freeze({
     rounded: "border-radius: 4px;",
 });
 exports.Blocks = Blocks;
-var NodeConfig = Object.freeze({
+var NodeConfig = {
     color: {
         black: { start: "[30m", end: "[39m" },
         red: { start: "[31m", end: "[39m" },
@@ -49,7 +49,7 @@ var NodeConfig = Object.freeze({
         hidden: { start: "[8m", end: "[28m" },
         strikethrough: { start: "[9m", end: "[29m" },
     }
-});
+};
 exports.NodeConfig = NodeConfig;
 var NodeTheme = Object.freeze({
     dracula: {
@@ -63,3 +63,4 @@ var NodeTheme = Object.freeze({
 });
 exports.NodeTheme = NodeTheme;
 module.exports = { Theme: Theme, Blocks: Blocks, NodeConfig: NodeConfig, NodeTheme: NodeTheme };
+//# sourceMappingURL=constants.js.map
